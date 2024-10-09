@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "6649885947",
+    "project_id": "one-signal-721f7",
+    "storage_bucket": "one-signal-721f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6649885947:android:b53e3e55368eb3fe3bac5e",
+        "android_client_info": {
+          "package_name": "com.example.on_signal_notification_70"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmYJcni6cSM9XHw0KITDqyq53WIwLs1r0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
