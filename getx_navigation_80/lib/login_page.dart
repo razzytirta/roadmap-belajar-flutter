@@ -11,7 +11,7 @@ class LoginPage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            Get.off(const MainPage());
+            Get.offNamed('/main');
           },
           child: const Text("Login"),
         ),

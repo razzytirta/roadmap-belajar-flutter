@@ -14,9 +14,8 @@ class MainPage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            Get.to(const SecondPage(),
-                transition: Transition.zoom,
-                duration: const Duration(seconds: 2));
+            Get.toNamed('/second?name=Fachrurazzi&address=Indonesia',
+                arguments: ['Hello', 'World']);
           },
           child: const Text("Go to Second Page"),
         ),

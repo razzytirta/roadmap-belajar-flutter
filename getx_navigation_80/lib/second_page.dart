@@ -22,13 +22,27 @@ class SecondPage extends StatelessWidget {
               },
               child: const Text("Back to Main Page"),
             ),
-            ElevatedButton(
-              onPressed: () async {
-                String? result = await Get.to<String>(const ThirdPage());
-                print("===>$result");
-              },
-              child: const Text("Go to Third Page"),
+            const SizedBox(
+              height: 10,
             ),
+            Column(
+              children: (Get.arguments as List<String>)
+                      .map(
+                        (e) => Text(e),
+                      )
+                      .toList() +
+                  [
+                    Text(Get.parameters['name']!),
+                    Text(Get.parameters['address']!),
+                  ],
+            )
+            // ElevatedButton(
+            //   onPressed: () async {
+            //     String? result = await Get.to<String>(const ThirdPage());
+            //     print("===>$result");
+            //   },
+            //   child: const Text("Go to Third Page"),
+            // ),
           ],
         ),
       ),
